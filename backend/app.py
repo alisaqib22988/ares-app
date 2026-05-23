@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, DEVOPS ENGINEERS in Docker FROM FLASK APP"
 
+        return render_template('index.html')
 @app.route('/api', methods=['GET'])
 def api():
 
